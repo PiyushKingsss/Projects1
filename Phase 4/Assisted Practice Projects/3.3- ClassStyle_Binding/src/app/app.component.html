@@ -1,0 +1,18 @@
+<h1>This is first angular project</h1>
+<!--one -way data binding using string interpolation-->
+<h2>{{title}}</h2>
+<!--one -way data binding using []-->
+<h2 [innerText]="para"></h2>
+<!-- {{}} converts everything in string-->
+<div> 
+    <button disabled="{{isSelected}}" ngNonBindable>Using {{}}</button>
+</div>
+<br/>
+<div>
+    <button [disabled]="isSelected">Using []</button>
+</div>
+<h2>{{text}}</h2>
+<!-- event binding data flows from view to componanet-->
+<div>
+    <button (click)="show()">Click Me</button>
+</div>
